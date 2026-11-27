@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه مدیریت مدرسه هوشمند</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-main': '#F5E6D3',
+                        'card-bg': '#FFFAF3',
+
+                        'brown-dark': '#5A3825',
+                        'brown-light': '#C19A75',
+                        'brown-medium': '#8B5E3C',
+                    },
+                    fontFamily: {
+                        'vazir': ['Vazirmatn', 'sans-serif'],
+                    }
+                }
+            }
+        }
+
+    </script>
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" 
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #F5E6D3; 
+
+            color: #5A3825;
+        }
+
+        .card-container {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(90, 56, 37, 0.05), 0 2px 4px -1px rgba(90, 56, 37, 0.03);
+        }
+
+
+        .card-container:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(90, 56, 37, 0.1), 0 10px 10px -5px rgba(90, 56, 37, 0.04);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5E6D3; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C19A75; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8B5E3C; 
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brown-medium selection:text-white font-vazir bg-bg-main">
+
+    
+    <header class="mt-4 mx-4 md:mx-8 bg-card-bg rounded-2xl shadow-sm px-6 py-4 flex justify-between items-center border border-brown-light/20">
+       
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-brown-light/20 rounded-lg flex items-center justify-center text-brown-dark">
+                <i class="fa-solid fa-book-open text-xl"></i>
+            </div>
+
+            <div>
+                <h1 class="text-lg md:text-xl font-bold text-brown-dark leading-tight">مدرسه هوشمند</h1>
+                <p class="text-xs text-brown-medium mt-1">سامانه مدیریت و آموزش</p>
+            </div>
+        </div>
+        
+        <div class="hidden md:flex items-center gap-2 text-brown-medium text-sm">
+            <i class="fa-regular fa-calendar-days text-brown-light"></i>
+            <span>شنبه، ۲۴ آبان 1405</span>
+        </div>
+    </header>
+
+   
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-10 w-full max-w-7xl mx-auto">
+        
+       
+        <section class="text-center mb-12 relative w-full">
+           
+            <div class="absolute top-0 right-1/4 text-brown-light/40 hidden md:block">
+                <i class="fa-solid fa-graduation-cap text-4xl transform -rotate-12"></i>
+            </div>
+
+            <div class="absolute bottom-0 left-1/4 text-brown-light/40 hidden md:block">
+                <i class="fa-solid fa-book text-3xl transform rotate-12"></i>
+            </div>
+
+            <h2 class="text-2xl md:text-4xl font-extrabold text-brown-dark mb-4 tracking-tight">
+                به سامانه مدیریت مدرسه هوشمند خوش آمدید!
+
+            </h2>
+            <p class="text-brown-medium text-sm md:text-base md:text-lg">
+                لطفاً نقش خود را انتخاب کرده و وارد شوید
+            </p>
+            
+            
+            <div class="flex items-center justify-center mt-6">
+                <div class="w-16 h-px bg-brown-light/40"></div>
+
+                <div class="mx-4 text-brown-medium">
+                    <i class="fa-solid fa-graduation-cap text-xl"></i>
+                </div>
+                <div class="w-16 h-px bg-brown-light/40"></div>
+            </div>
+        </section>
+
+       
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-5xl">
+            
+           
+            <div class="card-container bg-card-bg rounded-3xl p-6 flex flex-col items-center border border-brown-light/10 group">
+                
+                <div class="w-full h-48 bg-bg-main/50 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden group-hover:bg-bg-main/80 transition-colors duration-300">
+                    <span class="text-brown-medium/40 text-sm"> <img src="img/Screenshot_20261124_140020_Gallery.jpg" alt="">  </span>
+                </div>
+                <h3 class="text-xl font-bold text-brown-dark mb-2">اولیا</h3>
+                <p class="text-sm text-center text-brown-medium mb-8 leading-relaxed flex-grow">
+                    مشاهده وضعیت تحصیلی فرزند و دریافت اطلاعیه‌ها
+                </p>
+                <a href="parent.html" class="w-full py-3 bg-brown-dark text-white rounded-xl font-medium hover:bg-brown-medium transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg">
+                    <span>ورود به پنل اولیا</span>
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                </a>
+            </div>
+
+            
+            <div class="card-container bg-card-bg rounded-3xl p-6 flex flex-col items-center border border-brown-light/10 group">
+                
+                <div class="w-full h-48 bg-bg-main/50 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden group-hover:bg-bg-main/80 transition-colors duration-300">
+                    <span class="text-brown-medium/40 text-sm">  <img src="img/Screenshot_20261124_140024_Gallery.jpg" alt=""> </span>
+                </div>
+                <h3 class="text-xl font-bold text-brown-dark mb-2">دانش‌آموز</h3>
+                <p class="text-sm text-center text-brown-medium mb-8 leading-relaxed flex-grow">
+                    مشاهده نمرات، برنامه درسی و اطلاعیه‌های مدرسه
+                </p>
+               <a href="student.html" class="w-full py-3 bg-brown-dark text-white rounded-xl font-medium hover:bg-brown-medium transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg">
+                    <span>ورود به پنل دانش‌آموز</span>
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                </a> 
+            </div>
+            <div class="card-container bg-card-bg rounded-3xl p-6 flex flex-col items-center border border-brown-light/10 group">
+               
+                <div class="w-full h-48 bg-bg-main/50 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden group-hover:bg-bg-main/80 transition-colors duration-300">
+                    <span class="text-brown-medium/40 text-sm"> <img src="img/Screenshot_20261124_140027_Gallery.jpg" alt=""></span>
+
+                </div>
+                <h3 class="text-xl font-bold text-brown-dark mb-2">مدرسه</h3>
+                <p class="text-sm text-center text-brown-medium mb-8 leading-relaxed flex-grow">
+                    مدیریت اطلاعات مدرسه و دسترسی به بخش‌های مدیریتی
+                </p>
+                <a href="school.html" class="w-full py-3 bg-brown-dark text-white rounded-xl font-medium hover:bg-brown-medium transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg">
+                   
+                    <span>ورود به پنل مدرسه</span>
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+               </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    
+    <footer class="w-full py-6 text-center border-t border-brown-light/20 mt-auto">
+        <div class="flex items-center justify-center gap-2 text-brown-medium">
+            <i class="fa-solid fa-book-open text-brown-light"></i>
+            <p class="text-sm font-medium">با هم برای 
+
+آینده‌ای بهتر...</p>
+        </div>
+    </footer>
+
+</body>
+</html>
