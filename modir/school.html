@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مدرسه هوشمند | پنل مدرسه</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="school-body">
+
+  <!-- ===== Header ===== -->
+  <header class="school-header">
+    <div class="school-header-inner">
+      <a href="index.html" class="school-brand">مدرسه هوشمند</a>
+
+      <nav class="school-nav">
+        <a href="index.html" class="school-nav-link">صفحه اصلی</a>
+        <a href="school.html" class="school-nav-link school-nav-link-active">پنل مدرسه</a>
+        <a href="student.html" class="school-nav-link">پنل دانش آموز</a>
+        <a href="parent.html" class="school-nav-link">پنل اولیا</a>
+      </nav>
+
+      <div class="school-profile">
+        <span class="school-profile-text">مدیر مدرسه</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="school-main">
+
+    <!-- 1. Welcome -->
+    <section class="school-welcome school-card">
+      <h1 class="school-welcome-title">سلام، مدیر 
+
+عزیز! خوش آمدید</h1>
+      <p class="school-welcome-text">
+        به پنل مدیریت مدرسه هوشمند خوش آمدید. در این پنل میتوانید دانشآموزان، معلمان،
+        کلاسها، نمرات، حضور و غیاب و اطلاعیههای مدرسه را مدیریت کنید و از وضعیت کلی
+        مدرسه در یک نگاه مطلع شوید.
+      </p>
+    </section>
+
+    <!-- 2. Stats -->
+    <section aria-labelledby="stats-title">
+      <h2 id="stats-title" class="school-section-title">آمار کلی</h2>
+      <div class="school-stats-grid">
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">👥</div>
+          <div>
+            <p class="school-stat-label">تعداد کل دانشآموزان</p>
+            <p class="school-stat-value">۴۸۶</p>
+          </div>
+        </div>
+        <div class="school-card school-stat-card">
+
+          <div class="school-stat-icon">🧑🏫</div>
+          <div>
+            <p class="school-stat-label">تعداد معلمان</p>
+            <p class="school-stat-value">۳۲</p>
+          </div>
+        </div>
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">🏫</div>
+          <div>
+            <p class="school-stat-label">تعداد کلاسها</p>
+            <p class="school-stat-value">۱۸</p>
+          </div>
+        </div>
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">✅</div>
+          <div>
+            <p class="school-stat-label">درصد حضور</p>
+            <p class="school-stat-value">۹۴٪</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. Students -->
+    <section aria-labelledby="students-title">
+      <h2 id="students-title" class="school-section-title">مدیریت دانشآموزان</h2>
+      <div class="school-card school-table-wrap">
+        <table class="school-table">
+          <thead>
+            <tr>
+              <th>نام و نام خانوادگی</th>
+              <th>شماره دانشآموزی</th>
+              <th>کلاس</th>
+              <th>وضعیت</th>
+              <th>عملیات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>علی رضایی</td>
+              <td>۴۰۱۲۳۴۵۶</td>
+              <td>هفتم الف</td>
+              <td>
+                <select class="school-select">
+
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+                </select>
+              </td>
+              <td><button class="school-btn">ویرایش</button></td>
+            </tr>
+            <tr>
+              <td>زهرا محمدی</td>
+              <td>۴۰۱۲۳۴۵۷</td>
+              <td>هفتم ب</td>
+
+<td>
+                <select class="school-select">
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+                </select>
+              </td>
+              <td><button class="school-btn">ویرایش</button></td>
+            </tr>
+            <tr>
+              <td>محمد حسینی</td>
+              <td>۴۰۱۲۳۴۵۸</td>
+
+              <td>هشتم الف</td>
+              <td>
+                <select class="school-select">
+                  <option>فعال</option>
+                  <option selected>غیرفعال</option>
+                </select>
+              </td>
+              <td><button class="school-btn">ویرایش</button></td>
+            </tr>
+            <tr>
+              <td>فاطمه کریمی</td>
+              <td>۴۰۱۲۳۴۵۹</td>
+              <td>هشتم ب</td>
+              <td>
+                <select class="school-select">
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+                </select>
+              </td>
+              <td><button class="school-btn">ویرایش</button></td>
+            </tr>
+            <tr>
+
+              <td>رضا احمدی</td>
+              <td>۴۰۱۲۳۴۶۰</td>
+              <td>نهم الف</td>
+              <td>
+                <select class="school-select">
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+                </select>
+              </td>
+              <td><button class="school-btn">ویرایش</button></td>
+            </tr>
+            <tr>
+              <td>سارا نوری</td>
+              <td>۴۰۱۲۳۴۶۱</td>
+              <td>نهم ب</td>
+              <td>
+                <select class="school-select">
+                  <option>فعال</option>
+                  <option selected>غیرفعال</option>
+                </select>
+              </td>
+              <td><button class="school-btn">ویرایش</button></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Teachers -->
+    <section aria-labelledby="teachers-title">
+      <h2 id="teachers-title" class="school-section-title">مدیریت معلمان</h2>
+      <div class="school-card school-table-wrap">
+        <table class="school-table">
+          <thead>
+            <tr>
+              <th>نام و نام خانوادگی</th>
+              <th>درس</th>
+              <th>کلاس</th>
+              <th>وضعیت</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>مریم صادقی</td>
+              <td>ریاضی</td>
+
+              <td>هفتم الف</td>
+              <td>
+                <select class="school-select">
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+                  <option>مرخصی</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>حسن عباسی</td>
+              <td>علوم</td>
+              <td>هفتم ب</td>
+              <td>
+                <select class="school-select">
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+                  <option>مرخصی</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>نرگس قاسمی</td>
+              <td>ادبیات</td>
+
+              <td>هشتم الف</td>
+              <td>
+                <select class="school-select">
+                  <option>فعال</option>
+                  <option selected>مرخصی</option>
+                  <option>غیرفعال</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>اکبر مرادی</td>
+              <td>زبان انگلیسی</td>
+              <td>هشتم ب</td>
+              <td>
+                <select class="school-select">
+                  <option selected>فعال</option>
+                  <option>غیرفعال</option>
+
+<option>مرخصی</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>لیلا شریفی</td>
+
+              <td>مطالعات اجتماعی</td>
+              <td>نهم الف</td>
+              <td>
+                <select class="school-select">
+                  <option>فعال</option>
+                  <option>غیرفعال</option>
+                  <option selected>مرخصی</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. Classes -->
+    <section aria-labelledby="classes-title">
+      <h2 id="classes-title" class="school-section-title">مدیریت کلاسها</h2>
+      <div class="school-classes-grid">
+        <div class="school-card school-class-card">
+          <h3 class="school-class-name">هفتم الف</h3>
+          <p class="school-class-meta">پایه تحصیلی: 
+
+هفتم</p>
+          <p class="school-class-meta">تعداد دانشآموزان: ۲۸</p>
+          <p class="school-class-meta">معلم: مریم صادقی</p>
+        </div>
+        <div class="school-card school-class-card">
+          <h3 class="school-class-name">هفتم ب</h3>
+          <p class="school-class-meta">پایه تحصیلی: هفتم</p>
+          <p class="school-class-meta">تعداد دانشآموزان: ۲۶</p>
+          <p class="school-class-meta">معلم: حسن عباسی</p>
+        </div>
+        <div class="school-card school-class-card">
+          <h3 class="school-class-name">هشتم الف</h3>
+          <p class="school-class-meta">پایه تحصیلی: هشتم</p>
+          <p class="school-class-meta">تعداد دانشآموزان: ۳۰</p>
+          <p class="school-class-meta">معلم: نرگس 
+
+قاسمی</p>
+        </div>
+        <div class="school-card school-class-card">
+          <h3 class="school-class-name">نهم ب</h3>
+          <p class="school-class-meta">پایه تحصیلی: نهم</p>
+          <p class="school-class-meta">تعداد دانشآموزان: ۲۷</p>
+          <p class="school-class-meta">معلم: لیلا شریفی</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Grades -->
+    <section aria-labelledby="grades-title">
+      <h2 id="grades-title" class="school-section-title">بخش نمرات</h2>
+      <div class="school-card school-table-wrap">
+        <table class="school-table">
+          <thead>
+            <tr>
+              <th>نام دانشآموز</th>
+              <th>درس</th>
+
+              <th>نمره</th>
+              <th>کلاس</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>علی رضایی</td><td>ریاضی</td><td>۱۸.۵</td><td>هفتم الف</td></tr>
+            <tr><td>زهرا محمدی</td><td>علوم</td><td>۱۷</td><td>هفتم ب</td></tr>
+            <tr><td>محمد حسینی</td><td>ادبیات</td><td>۱۵.۲۵</td><td>هشتم الف</td></tr>
+            <tr><td>فاطمه کریمی</td><td>زبان انگلیسی</td><td>۱۹</td><td>هشتم ب</td></tr>
+            <tr><td>رضا احمدی</td><td>مطالعات اجتماعی</td><td>۱۶</td><td>نهم الف</td></tr>
+            <tr><td>سارا نوری</td><td>ریاضی</td><td>۲۰</td><td>نهم ب</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7. Attendance -->
+    <section aria-labelledby="attendance-title">
+
+      <h2 id="attendance-title" class="school-section-title">وضعیت حضور و غیاب</h2>
+      <div class="school-stats-grid">
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">🟢</div>
+          <div>
+            <p class="school-stat-label">حاضرین</p>
+            <p class="school-stat-value">۴۵۷</p>
+          </div>
+        </div>
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">🔴</div>
+          <div>
+            <p class="school-stat-label">غایبین</p>
+            <p class="school-stat-value">۱۹</p>
+          </div>
+        </div>
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">🟡</div>
+
+<div>
+            <p class="school-stat-label">تأخیری</p>
+            <p class="school-stat-value">۱۰</p>
+          </div>
+
+        </div>
+        <div class="school-card school-stat-card">
+          <div class="school-stat-icon">📊</div>
+          <div>
+            <p class="school-stat-label">درصد حضور</p>
+            <p class="school-stat-value">۹۴٪</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="school-card school-chart-card">
+        <p class="school-chart-title">نمودار بصری حضور و غیاب</p>
+        <div class="school-chart-bar">
+          <div class="school-chart-segment school-chart-present" style="width: 94%;">حاضر ۹۴٪</div>
+        </div>
+        <div class="school-chart-bar">
+          <div class="school-chart-segment school-chart-absent" style="width: 4%;">غایب ۴٪</div>
+        </div>
+        <div class="school-chart-bar">
+          <div class="school-chart-segment school-
+
+chart-late" style="width: 2%;">تأخیری ۲٪</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Weekly Schedule -->
+    <section aria-labelledby="schedule-title">
+      <h2 id="schedule-title" class="school-section-title">برنامه هفتگی مدرسه</h2>
+      <div class="school-card school-table-wrap">
+        <table class="school-table">
+          <thead>
+            <tr>
+              <th>روز هفته</th>
+              <th>ساعت</th>
+              <th>درس</th>
+              <th>کلاس</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>شنبه</td><td>۸:۰۰ - ۹:۳۰</td><td>ریاضی</td><td>هفتم الف</td></tr>
+            <tr><td>شنبه</td><td>۱۰:۰۰ - ۱۱:۳۰</td><td>علوم</td><td>هفتم ب</td></tr>
+
+            <tr><td>یکشنبه</td><td>۸:۰۰ - ۹:۳۰</td><td>ادبیات</td><td>هشتم الف</td></tr>
+            <tr><td>یکشنبه</td><td>۱۰:۰۰ - ۱۱:۳۰</td><td>زبان انگلیسی</td><td>هشتم ب</td></tr>
+            <tr><td>دوشنبه</td><td>۸:۰۰ - ۹:۳۰</td><td>مطالعات اجتماعی</td><td>نهم الف</td></tr>
+            <tr><td>دوشنبه</td><td>۱۰:۰۰ - ۱۱:۳۰</td><td>ریاضی</td><td>نهم ب</td></tr>
+            <tr><td>سهشنبه</td><td>۸:۰۰ - ۹:۳۰</td><td>علوم</td><td>هفتم الف</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 9. Announcements -->
+    <section aria-labelledby="announcements-title">
+      <h2 id="announcements-title" class="school-section-title">اطلاعیههای مدرسه</h2>
+      <div class="school-announcements-grid">
+        <article class="school-card school-announcement-card">
+          <h3 class="school-announcement-
+
+title">آزمون میانترم</h3>
+          <p class="school-announcement-text">آزمون میانترم پایه هفتم تا نهم از هفته آینده آغاز میشود.</p>
+          <p class="school-announcement-date">۱۴۰۳/۰۸/۱۲</p>
+        </article>
+        <article class="school-card school-announcement-card">
+          <h3 class="school-announcement-title">جلسه اولیا و مربیان</h3>
+          <p class="school-announcement-text">جلسه اولیا و مربیان روز پنجشنبه ساعت ۱۶ در سالن اجتماعات برگزار میشود.</p>
+          <p class="school-announcement-date">۱۴۰۳/۰۸/۱۵</p>
+        </article>
+        <article class="school-card school-announcement-card">
+          <h3 class="school-announcement-title">اردوی علمی</h3>
+          <p class="school-announcement-text">اردوی علمی بازدید از موزه علوم برای پایه هشتم برنامهریزی شده است.</p>
+
+          <p class="school-announcement-date">۱۴۰۳/۰۸/۲۰</p>
+        </article>
+        <article class="school-card school-announcement-card">
+          <h3 class="school-announcement-title">تعطیلی رسمی</h3>
+          <p class="school-announcement-text">مدرسه در روز چهارشنبه به مناسبت تعطیلی رسمی تعطیل خواهد بود.</p>
+          <p class="school-announcement-date">۱۴۰۳/۰۸/۲۳</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. Settings -->
+    <section aria-labelledby="settings-title">
+      <h2 id="settings-title" class="school-section-title">تنظیمات مدرسه</h2>
+
+<div class="school-card school-settings">
+        <div class="school-settings-grid">
+          <div>
+
+            <label class="school-label">نام مدرسه</label>
+            <input class="school-input" type="text" value="دبیرستان هوشمند نمونه" readonly />
+          </div>
+          <div>
+            <label class="school-label">سال تحصیلی</label>
+            <input class="school-input" type="text" value="۱۴۰۳ - ۱۴۰۴" readonly />
+          </div>
+          <div>
+            <label class="school-label">شماره تماس</label>
+            <input class="school-input" type="text" value="۰۲۱-۱۲۳۴۵۶۷۸" readonly />
+          </div>
+          <div>
+            <label class="school-label">آدرس</label>
+            <input class="school-input" type="text" value="تهران، خیابان نمونه، پلاک ۱۲" readonly />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="school-footer">
+    <p>© مدرسه هوشمند — پنل مدیریت مدرسه | پروژه دانشگاهی</p>
+  </footer>
+
+</body>
+</html>
