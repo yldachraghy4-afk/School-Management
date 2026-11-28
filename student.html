@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل دانشآموز | مدرسه هوشمند</title>
+  <!-- فونت Vazirmatn -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* تنظیمات فونت و رنگهای پایه */
+    body {
+      font-family: 'Vazirmatn', system-ui, 
+
+-apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: #F5E6D3;
+      color: #5A3825; /* قهوهای تیره به عنوان رنگ اصلی متن */
+    }
+    /* رنگ پسزمینه کارتها */
+    .card-bg {
+      background-color: #FFFAF3;
+    }
+    /* رنگهای سفارشی */
+    .bg-cream { background-color: #F5E6D3; }
+    .bg-card { background-color: #FFFAF3; }
+    .bg-dark-brown { background-color: #5A3825; }
+    .bg-mocha { background-color: #C19A75; }
+    .bg-med-brown { background-color: 
+
+#8B5E3C; }
+    .text-dark-brown { color: #5A3825; }
+    .text-mocha { color: #C19A75; }
+    .text-med-brown { color: #8B5E3C; }
+    .border-mocha { border-color: #C19A75; }
+    .border-dark-brown { border-color: #5A3825; }
+    .ring-mocha { --tw-ring-color: #C19A75; }
+    .hover-bg-med-brown:hover { background-color: #8B5E3C; }
+    .hover-bg-dark-brown:hover { background-color: #5A3825; }
+    .hover-text-white:hover { color: #FFFAF3; }
+    /* اسکرولبار سفارشی */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: 
+
+#F5E6D3; }
+    ::-webkit-scrollbar-thumb { background: #C19A75; border-radius: 8px; }
+  </style>
+</head>
+<body class="bg-cream min-h-screen p-4 sm:p-6 md:p-8 flex items-start justify-center">
+
+  <!-- کارت اصلی پنل - عرض محدود در دسکتاپ برای زیبایی بیشتر -->
+  <main class="w-full max-w-6xl mx-auto space-y-6">
+
+    <!-- ===== HEADER: خوشآمدگویی و اطلاعات کلی ===== -->
+    <header class="card-bg rounded-2xl shadow-lg border border-mocha/30 p-5 sm:p-6 md:p-8 transition-all">
+
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <!-- بخش خوشآمدگویی -->
+        <div class="space-y-1">
+          <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-dark-brown flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-mocha"></span>
+            خوش آمدی، سارا احمدی
+          </h1>
+          <p class="text-sm sm:text-base text-med-brown/80 font-medium">
+            پایه دهم – رشته ریاضی و فیزیک | مدرسه هوشمند
+          </p>
+        </div>
+        <!-- تاریخ و وضعیت -->
+        <div class="flex items-center gap-3 
+
+text-sm bg-cream/70 rounded-full px-4 py-2 self-start md:self-auto border border-mocha/20">
+          <span class="text-dark-brown font-semibold">چهارشنبه  4 آذر 1405</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-mocha"></span>
+          <span class="text-med-brown">نوبت صبح</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== GRID: بخشهای اصلی ===== -->
+
+    <!-- ردیف اول: کارتهای خلاصه (۳ کارت) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      
+      <!-- کارت معدل -->
+
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 transition-all hover:shadow-xl hover:border-mocha/40">
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-sm font-medium text-med-brown">معدل کل ترم</p>
+            <p class="text-3xl font-bold text-dark-brown mt-1">۱۸.۷۵</p>
+          </div>
+          <div class="bg-mocha/20 p-3 rounded-xl text-dark-brown">
+            <!-- آیکون ساده بدون تصویر: نمودار میلهای -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-
+
+width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+        </div>
+        <div class="mt-3 flex items-center gap-1 text-xs font-medium text-mocha">
+          <span>▲ ۰.۵ نسبت به ماه قبل</span>
+        </div>
+      </div>
+
+      <!-- کارت حضور -->
+      <div class="card-bg rounded-2xl 
+
+shadow-md border border-mocha/20 p-5 transition-all hover:shadow-xl hover:border-mocha/40">
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-sm font-medium text-med-brown">حضور در کلاس</p>
+            <p class="text-3xl font-bold text-dark-brown mt-1">۹۸٪</p>
+          </div>
+          <div class="bg-mocha/20 p-3 rounded-xl text-dark-brown">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 
+
+4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="mt-3 flex items-center gap-1 text-xs font-medium text-med-brown">
+          <span>۲ غیبت غیرموجه</span>
+        </div>
+      </div>
+
+      <!-- کارت تکالیف باقیمانده -->
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 transition-all hover:shadow-xl hover:border-mocha/40 sm:col-span-2 lg:col-span-1">
+        <div class="flex items-start justify-between">
+          <div>
+
+            <p class="text-sm font-medium text-med-brown">تکالیف در انتظار</p>
+            <p class="text-3xl font-bold text-dark-brown mt-1">۳</p>
+          </div>
+          <div class="bg-mocha/20 p-3 rounded-xl text-dark-brown">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+
+        </div>
+        <div class="mt-3 flex items-center gap-1 text-xs font-medium text-mocha">
+          <span>۱ مورد فوری</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ردیف دوم: برنامه هفتگی و اعلانها (در دسکتاپ دو ستون نابرابر) -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6">
+      
+      <!-- برنامه درسی امروز (ستون بزرگتر) -->
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 md:p-6 lg:col-span-2">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-base sm:text-lg 
+
+font-bold text-dark-brown flex items-center gap-2">
+            <span class="w-1.5 h-5 bg-mocha rounded-full inline-block"></span>
+            برنامه امروز
+          </h2>
+          <span class="text-xs bg-mocha/20 text-dark-brown px-3 py-1 rounded-full font-medium">شنبه</span>
+        </div>
+        <div class="space-y-3">
+          <!-- کلاس اول -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-cream/50 rounded-xl p-3 sm:p-4 border-r-4 border-mocha">
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-mocha"></span>
+
+              <span class="font-semibold text-dark-brown text-sm sm:text-base">ریاضی ۱</span>
+            </div>
+            <div class="flex items-center gap-4 mr-7 sm:mr-0">
+              <span class="text-xs sm:text-sm text-med-brown bg-white/60 px-3 py-1 rounded-full">۸:۰۰ – ۹:۳۰</span>
+              <span class="text-xs text-mocha font-medium">کلاس ۱۰۲</span>
+            </div>
+          </div>
+          <!-- کلاس دوم -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-cream/50 rounded-xl p-3 sm:p-4 border-r-4 border-med-brown">
+            <div class="flex items-center gap-3">
+
+              <span class="w-2 h-2 rounded-full bg-med-brown"></span>
+              <span class="font-semibold text-dark-brown text-sm sm:text-base">فیزیک ۱</span>
+            </div>
+            <div class="flex items-center gap-4 mr-7 sm:mr-0">
+              <span class="text-xs sm:text-sm text-med-brown bg-white/60 px-3 py-1 rounded-full">۹:۴۵ – ۱۱:۱۵</span>
+              <span class="text-xs text-mocha font-medium">آزمایشگاه</span>
+            </div>
+          </div>
+          <!-- کلاس سوم -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-cream/50 rounded-xl p-3 sm:p-4 border-r-4 border-mocha/60">
+
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-mocha/60"></span>
+              <span class="font-semibold text-dark-brown text-sm sm:text-base">ادبیات فارسی</span>
+            </div>
+            <div class="flex items-center gap-4 mr-7 sm:mr-0">
+              <span class="text-xs sm:text-sm text-med-brown bg-white/60 px-3 py-1 rounded-full">۱۱:۳۰ – ۱۳:۰۰</span>
+              <span class="text-xs text-mocha font-medium">کلاس ۲۰۳</span>
+            </div>
+          </div>
+          <!-- کلاس چهارم -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between 
+
+gap-2 bg-cream/30 rounded-xl p-3 sm:p-4 border-r-4 border-mocha/30 opacity-70">
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-mocha/40"></span>
+              <span class="font-semibold text-dark-brown text-sm sm:text-base">زنگ مطالعه آزاد</span>
+            </div>
+            <div class="flex items-center gap-4 mr-7 sm:mr-0">
+              <span class="text-xs sm:text-sm text-med-brown bg-white/60 px-3 py-1 rounded-full">۱۳:۰۰ – ۱۴:۰۰</span>
+              <span class="text-xs text-mocha font-medium">کتابخانه</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- اعلانها و پیامها (ستون کوچکتر) -->
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 md:p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-base sm:text-lg font-bold text-dark-brown flex items-center gap-2">
+            <span class="w-1.5 h-5 bg-mocha rounded-full inline-block"></span>
+            اعلانها
+          </h2>
+          <span class="text-xs bg-mocha/20 text-dark-brown px-3 py-1 rounded-full font-medium">۳ جدید</span>
+        </div>
+
+        <div class="space-y-4">
+          <!-- اعلان ۱ -->
+          <div class="flex gap-3 items-start border-b border-mocha/10 pb-3">
+            <div class="w-1.5 h-1.5 rounded-full bg-mocha mt-2 flex-shrink-0"></div>
+            <div>
+              <p class="text-sm font-semibold text-dark-brown">آزمون میانترم ریاضی</p>
+              <p class="text-xs text-med-brown/80 mt-1">دوشنبه ۱۷ آذر – فصل ۱ تا ۳</p>
+            </div>
+          </div>
+          <!-- اعلان ۲ -->
+          <div class="flex gap-3 items-start border-b border-mocha/10 pb-3">
+            <div class="w-1.5 h-1.5 rounded-full bg-med-brown mt-2 flex-shrink-0"></div>
+
+            <div>
+              <p class="text-sm font-semibold text-dark-brown">کارگاه رباتیک</p>
+              <p class="text-xs text-med-brown/80 mt-1">ثبتنام تا ۲۰ آذر – ظرفیت محدود</p>
+            </div>
+          </div>
+          <!-- اعلان ۳ -->
+          <div class="flex gap-3 items-start">
+            <div class="w-1.5 h-1.5 rounded-full bg-mocha/60 mt-2 flex-shrink-0"></div>
+            <div>
+              <p class="text-sm font-semibold text-dark-brown">تکلیف ادبیات</p>
+              <p class="text-xs text-med-brown/80 mt-1">تحویل تا چهارشنبه ۲۰ آذر</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- دکمه مشاهده همه (بدون JS) -->
+        <div class="mt-5 pt-3 border-t border-mocha/20">
+          <span class="text-sm text-mocha font-medium cursor-default hover:text-med-brown transition flex items-center gap-1">
+            مشاهده همه اعلانها
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ردیف سوم: نمرات دروس و حضور و غیاب (دو ستون مساوی) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      
+      <!-- نمرات دروس -->
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 md:p-6">
+        <h2 class="text-base sm:text-lg font-bold text-dark-brown flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-5 bg-mocha rounded-full inline-block"></span>
+          نمرات دروس
+        </h2>
+        <div class="space-y-3">
+
+          <!-- درس ۱ -->
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-dark-brown">ریاضی ۱</span>
+            <div class="flex items-center gap-2">
+              <div class="w-24 sm:w-32 h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-mocha rounded-full" style="width: 94%"></div>
+              </div>
+              <span class="text-sm font-bold text-med-brown w-8 text-left">۱۸.۸</span>
+            </div>
+          </div>
+          <!-- درس ۲ -->
+          <div class="flex items-center 
+
+justify-between">
+            <span class="text-sm font-medium text-dark-brown">فیزیک ۱</span>
+            <div class="flex items-center gap-2">
+              <div class="w-24 sm:w-32 h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-mocha rounded-full" style="width: 88%"></div>
+              </div>
+              <span class="text-sm font-bold text-med-brown w-8 text-left">۱۷.۶</span>
+            </div>
+          </div>
+          <!-- درس ۳ -->
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-dark-brown">ادبیات فارسی</
+
+span>
+            <div class="flex items-center gap-2">
+              <div class="w-24 sm:w-32 h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-mocha rounded-full" style="width: 96%"></div>
+              </div>
+              <span class="text-sm font-bold text-med-brown w-8 text-left">۱۹.۲</span>
+            </div>
+          </div>
+          <!-- درس ۴ -->
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-dark-brown">شیمی ۱</span>
+            <div class="flex items-center gap-2">
+
+              <div class="w-24 sm:w-32 h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-mocha rounded-full" style="width: 85%"></div>
+              </div>
+              <span class="text-sm font-bold text-med-brown w-8 text-left">۱۷.۰</span>
+            </div>
+          </div>
+          <!-- درس ۵ -->
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-medium text-dark-brown">زبان انگلیسی</span>
+            <div class="flex items-center gap-2">
+              <div class="w-24 sm:w-32 h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-mocha 
+
+rounded-full" style="width: 92%"></div>
+              </div>
+              <span class="text-sm font-bold text-med-brown w-8 text-left">۱۸.۴</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 pt-3 border-t border-mocha/20 flex justify-between items-center">
+          <span class="text-xs text-med-brown/80">میانگین کلاس: ۱۷.۵</span>
+          <span class="text-xs font-semibold text-mocha bg-mocha/10 px-3 py-1 rounded-full">وضعیت: عالی</span>
+        </div>
+      </div>
+
+      <!-- حضور و غیاب -->
+
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 md:p-6">
+        <h2 class="text-base sm:text-lg font-bold text-dark-brown flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-5 bg-mocha rounded-full inline-block"></span>
+          حضور و غیاب
+        </h2>
+        <!-- نوار پیشرفت حضور -->
+        <div class="mb-4">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-dark-brown font-medium">درصد حضور</span>
+            <span class="text-mocha font-bold">۹۸٪</span>
+          </div>
+          <div class="w-full h-3 bg-cream 
+
+rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-l from-mocha to-med-brown rounded-full" style="width: 98%"></div>
+          </div>
+        </div>
+        <!-- آمار حضور -->
+        <div class="grid grid-cols-3 gap-3 mt-4">
+          <div class="bg-cream/60 rounded-xl p-3 text-center border border-mocha/10">
+            <p class="text-2xl font-bold text-dark-brown">۴۲</p>
+            <p class="text-xs text-med-brown">حاضر</p>
+          </div>
+          <div class="bg-cream/60 rounded-xl p-3 text-center border border-mocha/10">
+
+            <p class="text-2xl font-bold text-med-brown">۲</p>
+            <p class="text-xs text-med-brown">غایب</p>
+          </div>
+          <div class="bg-cream/60 rounded-xl p-3 text-center border border-mocha/10">
+            <p class="text-2xl font-bold text-mocha">۱</p>
+            <p class="text-xs text-med-brown">تأخیر</p>
+          </div>
+        </div>
+        <!-- آخرین غیبت -->
+        <div class="mt-4 flex items-center justify-between bg-mocha/10 rounded-xl p-3">
+          <span class="text-xs text-med-brown">آخرین غیبت: ۸ آذر ۱۴۰۳</span>
+
+          <span class="text-xs font-medium text-dark-brown">موجه</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ردیف چهارم: تکالیف و پیامها (دو ستون مساوی) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      
+      <!-- لیست تکالیف -->
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 md:p-6">
+        <h2 class="text-base sm:text-lg font-bold text-dark-brown flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-5 bg-mocha rounded-full inline-block"></span>
+
+          تکالیف پیشرو
+        </h2>
+        <div class="space-y-3">
+          <!-- تکلیف ۱ -->
+          <div class="flex items-start justify-between gap-2 bg-cream/40 rounded-xl p-3 border border-mocha/10">
+            <div class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-400/80 mt-1.5 flex-shrink-0"></span>
+              <div>
+                <p class="text-sm font-medium text-dark-brown">حل تمرینهای فصل ۲ ریاضی</p>
+                <p class="text-xs text-med-brown/80">مهلت: دوشنبه ۱۷ آذر</p>
+              </div>
+            </div>
+
+            <span class="text-[10px] sm:text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full font-medium whitespace-nowrap">فوری</span>
+          </div>
+          <!-- تکلیف ۲ -->
+          <div class="flex items-start justify-between gap-2 bg-cream/40 rounded-xl p-3 border border-mocha/10">
+            <div class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0"></span>
+              <div>
+                <p class="text-sm font-medium text-dark-brown">خلاصهنویسی درس ادبیات</p>
+                <p class="text-xs text-med-brown/80">مهلت: چهارشنبه ۲۰ آذر</p>
+
+              </div>
+            </div>
+            <span class="text-[10px] sm:text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full font-medium whitespace-nowrap">متوسط</span>
+          </div>
+          <!-- تکلیف ۳ -->
+          <div class="flex items-start justify-between gap-2 bg-cream/40 rounded-xl p-3 border border-mocha/10">
+            <div class="flex items-start gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400 mt-1.5 flex-shrink-0"></span>
+              <div>
+                <p class="text-sm font-medium text-dark-brown">گزارش آزمایش فیزیک</p>
+                <p class="text-xs text-med-
+
+brown/80">مهلت: شنبه ۲۴ آذر</p>
+              </div>
+            </div>
+            <span class="text-[10px] sm:text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full font-medium whitespace-nowrap">عادی</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- پیامهای معلمان -->
+      <div class="card-bg rounded-2xl shadow-md border border-mocha/20 p-5 md:p-6">
+        <h2 class="text-base sm:text-lg font-bold text-dark-brown flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-5 bg-mocha rounded-full inline-block"></span>
+
+          پیامهای معلمان
+        </h2>
+        <div class="space-y-3">
+          <!-- پیام ۱ -->
+          <div class="bg-cream/40 rounded-xl p-3 border-r-4 border-mocha">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold text-dark-brown">آقای رضایی – ریاضی</span>
+              <span class="text-[10px] text-med-brown/60">۲ ساعت پیش</span>
+            </div>
+            <p class="text-sm text-med-brown">سارا جان، تمرینهای فصل ۲ را تا دوشنبه حتماً تحویل بده. نمره کلاسی هم لحاظ میشه.</p>
+          </div>
+          <!-- پیام ۲ -->
+
+          <div class="bg-cream/40 rounded-xl p-3 border-r-4 border-med-brown/60">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold text-dark-brown">خانم موسوی – ادبیات</span>
+              <span class="text-[10px] text-med-brown/60">دیروز</span>
+            </div>
+            <p class="text-sm text-med-brown">انشای شما بسیار خوب بود. به عنوان نمونه در کلاس میخونم. آفرین!</p>
+          </div>
+          <!-- پیام ۳ -->
+          <div class="bg-cream/40 rounded-xl p-3 border-r-4 border-mocha/40">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold 
+
+text-dark-brown">آقای کاظمی – فیزیک</span>
+              <span class="text-[10px] text-med-brown/60">۲ روز پیش</span>
+            </div>
+            <p class="text-sm text-med-brown">گزارش آزمایشگاه را با فرمت جدید آماده کنید. فایل نمونه در گروه هست.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- دکمههای عملیات سریع (بدون JS، فقط ظاهری) -->
+    <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 pt-2 pb-4">
+      <span class="bg-dark-brown text-cream px-5 py-2.5 rounded-full text-sm 
+
+font-semibold shadow-md hover:bg-med-brown transition-all duration-200 cursor-default inline-flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+        </svg>
+        ثبتنام در کارگاه
+      </span>
+      <span class="bg-card border border-mocha text-dark-brown px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:bg-mocha/20 transition-all duration-200 cursor-default inline-flex items-center gap-2">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        </svg>
+        مشاهده کارنامه
+      </span>
+      <span class="bg-card border border-mocha text-dark-brown px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:bg-mocha/20 
+
+transition-all duration-200 cursor-default inline-flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+        پرسش از معلم
+      </span>
+    </div>
+
+    <!-- فوتر ساده -->
+    <footer class="text-center text-xs text-
+
+med-brown/50 border-t border-mocha/20 pt-4">
+      مدرسه هوشمند – پنل دانشآموز | نسخه نمایشی
+    </footer>
+
+  </main>
+
+</body>
+</html>
